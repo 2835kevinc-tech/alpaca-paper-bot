@@ -1,0 +1,3 @@
+ticker,name,type,weight_pct,avg_entry,notes
+PMAX,PMAX,equity,67.7,1.24,Webull real money; 5 shares; down ~32% vs 15% stop rule; user chose to let it ride (as of 2026-10-03 weight is % of invested positions not including cash)
+AAPL,Apple,equity,32.3,333.66,Webull real money; fractional ~0.006 share; about flat (as of 2026-10-03 weight is % of invested positions not including cash)

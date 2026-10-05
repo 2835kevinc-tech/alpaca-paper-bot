@@ -1,8 +1,11 @@
-# Project B: Alpaca Paper Bot (FAKE $5,000, fully automated)
+# Project A: Webull Alert Bot (REAL money, flag-only)
 
-Authority: full, but only inside risk-rules.md. Paper account only.
-- Paper API base URL ONLY: https://paper-api.alpaca.markets. The code must refuse to start if the base URL is anything else.
-- Keys live in environment variables / secrets (ALPACA_KEY_ID, ALPACA_SECRET). Never in chat, never in these files.
-- Own files only: risk-rules.md, journal.csv, weekly-lessons.md. No Webull data or credentials here.
-- Daily heartbeat: bot logs "alive" every run; if no heartbeat by 9:45 AM ET the user is notified.
-- Lessons can be COPIED by the user into Webull project; nothing flows back automatically.
+Authority: research and notify ONLY.
+- NEVER call any Webull place_*/order tool. NEVER fund, transfer, buy or sell.
+- Read-only data tools only (quotes, bars, earnings calendar, positions).
+- Max 3 positions. Account about $38 now (may grow to $75-$100 after Alpaca proves out).
+- Flag format: ticker | why | entry zone | stop price | sell target | max shares/dollars.
+- Flag times: ~5:00 AM, ~3:30 PM, weekend review (user works 5:30am-2:40pm).
+- Cash account: sale proceeds settle next business day; do not count them as spendable same day.
+- Own files only: portfolio.csv, watchlist.md, flags-log.md. No Alpaca keys or data here.
+- Stop rule: pause alerts if user says "pause"; stop-out = total dollars deposited, not just balance.
